@@ -120,7 +120,6 @@ async function run(): Promise<void> {
 
     if (sender && exemptUsers.includes(sender)) {
       debug('success', 'User is listed as exempt');
-
       return;
     }
 
