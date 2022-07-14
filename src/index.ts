@@ -25,7 +25,6 @@ async function run(): Promise<void> {
   try {
     // Provide complete context object right away if debugging
     debug('context', JSON.stringify(context));
-
     // Check for a ticket reference in the title
     // const title: string = context?.payload?.pull_request?.title;
     // const titleRegexBase = getInput('titleRegex', { required: true });
@@ -121,7 +120,6 @@ async function run(): Promise<void> {
 
     if (sender && exemptUsers.includes(sender)) {
       debug('success', 'User is listed as exempt');
-
       return;
     }
 
