@@ -281,7 +281,6 @@ async function run(): Promise<void> {
     if (bodyCheck === null && bodyURLCheck === null) {
       debug('failure', 'Title, branch, and body do not contain a reference to a ticket');
       setFailed('No ticket was referenced in this pull request');
-
       return;
     }
   } catch (error) {
