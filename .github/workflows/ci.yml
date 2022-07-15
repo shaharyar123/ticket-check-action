@@ -23,9 +23,9 @@ jobs:
       - name: Test
         run: npm test --coverage
       - name: Commit build
-        uses: endbug/add-and-commit@v4
+        uses: endbug/add-and-commit@v9
         with:
-          add: build
+          add: 'build --force'
           force: true
           message: Add build code
           ref: v1
