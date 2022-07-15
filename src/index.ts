@@ -31,7 +31,7 @@ async function run(): Promise<void> {
     // const titleRegexFlags = getInput('titleRegexFlags', {
     //   required: true
     // });
-    const ticketLink = getInput('ticketLink', { required: false });
+    // const ticketLink = getInput('ticketLink', { required: false });
     // const titleRegex = new RegExp(titleRegexBase, titleRegexFlags);
     // const titleCheck = titleRegex.exec(title);
 
@@ -116,7 +116,7 @@ async function run(): Promise<void> {
     debug('sender type', senderType);
     debug('quiet mode', quiet.toString());
     debug('exempt users', exemptUsers.join(','));
-    debug('ticket link', ticketLink);
+    // debug('ticket link', ticketLink);
 
     if (sender && exemptUsers.includes(sender)) {
       debug('success', 'User is listed as exempt');
